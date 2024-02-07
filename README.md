@@ -1,11 +1,11 @@
 # Gnome-Sort-Clientes
-Ordenação de strings com Gnome Sort
+**Ordenação de strings com Gnome Sort**
 
-Componentes:
+**Componentes:**
 
-Gustavo Kesley
-Fabricio Pereira
-Abnoan Gabriel
-Dinarte Filho
+* **Gustavo Kesley**
+* **Fabricio Pereira**
+* **Abnoan Gabriel**
+* **Dinarte Filho**
 
 
