@@ -2,16 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Endereco{
-    char nome_da_rua[20], barirro[20];
-    int numero_da_casa, CEP;
-};
 
+// Estrutura do endereco do cliente
 struct Endereco{
     char nome_da_rua[20], barirro[20], cidade[20];
     int numero_da_casa, CEP;
 };
 
+// Estrutura do cliente
 struct cliente{
     char nome[50];
     int cod_cliente;
@@ -19,6 +17,7 @@ struct cliente{
     struct Endereco endereco;
 };
 
+// Função para preencher os dados do cliente
 void PreEncherCliente(struct cliente *cliente){
     printf("Nome do cliente: ");
     scanf(" [^\n]", cliente->nome);
