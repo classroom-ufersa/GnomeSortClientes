@@ -1,3 +1,4 @@
+// BRANCH CRIADA PARA TESTE DE FUNCIONALIDADES //
 #include "cliente.h"
 #include <stdio.h>
 #include <stdlib.h>
