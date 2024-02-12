@@ -2,11 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 // Estrutura do endereco do cliente
 struct Endereco{
-    char nome_da_rua[20], barirro[20], cidade[20];
-    int numero_da_casa, CEP;
+    char nome_da_rua[20];
+    char barirro[20];
+    char cidade[20];
+    int numero_da_casa; 
+    int CEP;
 };
 
 // Estrutura do cliente
@@ -20,23 +22,34 @@ struct cliente{
 // Função para preencher os dados do cliente
 void PreEncherCliente(struct cliente *cliente){
     printf("Nome do cliente: ");
-    scanf(" [^\n]", cliente->nome);
+    scanf(" %[^\n]", cliente->nome);
 
     printf("Insira seu endereco conforme pedido abaixo: \n");
     printf("Nome da cidade em que reside: \n");
-    scanf(" [^\n]", &cliente->endereco.cidade);
+    scanf(" %[^\n]", cliente->endereco.cidade);
 
     printf("Nome da rua: \n");
-    scanf(" [^\n]", &cliente->endereco.nome_da_rua);
+    scanf(" %[^\n]", cliente->endereco.nome_da_rua);
 
     printf("Nome do Bairro: \n");
-    scanf(" [^\n]", &cliente->endereco.barirro);
+    scanf(" %[^\n]", cliente->endereco.barirro);
 
     printf("Numero da casa: \n");
     scanf("%d", &cliente->endereco.numero_da_casa);
 
     printf("Insira o CEP: \n");
     scanf("%d", &cliente->endereco.CEP);
+}
+
+void ImprimirCliente(struct cliente *cliente){
+    printf("=========== Dados do cliente ===========\n");
+    printf("Nome do cliente: %s\n", cliente->nome);
+    printf("Cidade: %s\n", cliente->endereco.cidade);
+    printf("Rua: %s\n", cliente->endereco.nome_da_rua);
+    printf("Bairro: %s\n", cliente->endereco.barirro);
+    printf("Numeo da casa: %d\n", cliente->endereco.numero_da_casa);
+    printf("CEP: %d\n", cliente->endereco.CEP);
+    printf("=======================================\n");
 }
 
  
