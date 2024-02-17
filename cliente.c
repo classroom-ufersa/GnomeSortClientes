@@ -32,39 +32,28 @@ int carregarClientes(Cliente **clientes){
     return quantidade;
 }
 
+// Função para salvar informações de clientes em um arquivo de texto.
+void salvarClientes(Cliente *clientes, int quantidade) {
+     // Abre o arquivo "clientes_ordenados.txt" para escrita.
+    FILE *arquivo = fopen("clientes_ordenados.txt", "w");
 
+    // Verifica se houve erro na abertura do arquivo.
+    if (arquivo == NULL) {
+        perror("Erro ao abrir o arquivo");
+        return;
+    }
 
-// Função para preencher os dados do cliente
-void PreEncherCliente(struct cliente *cliente){
-    printf("Nome do cliente: ");
-    scanf(" %[^\n]", cliente->nome);
+    // Escreve a quantidade de clientes no arquivo.
+    fprintf(arquivo, "%d\n", quantidade);
 
-    printf("Insira seu endereco conforme pedido abaixo: \n");
-    printf("Nome da cidade em que reside: \n");
-    scanf(" %[^\n]", cliente->endereco.cidade);
+    // Escreve as informações de cada cliente no arquivo.
+    for (int i = 0; i < quantidade; i++) {
+        fprintf(arquivo, " %s %s %s\n", clientes[i].codigo, clientes[i].nome, clientes[i].endereco);
+    }
 
-    printf("Nome da rua: \n");
-    scanf(" %[^\n]", cliente->endereco.nome_da_rua);
-
-    printf("Nome do Bairro: \n");
-    scanf(" %[^\n]", cliente->endereco.barirro);
-
-    printf("Numero da casa: \n");
-    scanf("%d", &cliente->endereco.numero_da_casa);
-
-    printf("Insira o CEP: \n");
-    scanf("%d", &cliente->endereco.CEP);
+    // Fecha o arquivo.
+    fclose(arquivo);
 }
 
-void ImprimirCliente(struct cliente *cliente){
-    printf("=========== Dados do cliente ===========\n");
-    printf("Nome do cliente: %s\n", cliente->nome);
-    printf("Cidade: %s\n", cliente->endereco.cidade);
-    printf("Rua: %s\n", cliente->endereco.nome_da_rua);
-    printf("Bairro: %s\n", cliente->endereco.barirro);
-    printf("Numeo da casa: %d\n", cliente->endereco.numero_da_casa);
-    printf("CEP: %d\n", cliente->endereco.CEP);
-    printf("=======================================\n");
-}
 
  
