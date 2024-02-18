@@ -2,8 +2,7 @@
 
 // Função para carregar clientes a partir de um arquivo
 int carregarClientes(Cliente **clientes){
-    // Abre o arquivo "clientes_ordenados.txt" em modo de leitura
-    FILE *arquivo = fopen("clientes_ordenados.txt", "r");
+    FILE *arquivo = fopen("clientes_ordenados.txt", "r"); // Abre o arquivo "clientes_ordenados.txt" em modo de leitura
     
     // Verifica se a abertura do arquivo foi bem-sucedida
     if(arquivo == NULL){
@@ -13,23 +12,18 @@ int carregarClientes(Cliente **clientes){
 
     int quantidade;
     
-    // Lê a quantidade de clientes do arquivo
-    fscanf(arquivo, "%d", &quantidade);
+    fscanf(arquivo, "%d", &quantidade); // Lê a quantidade de clientes do arquivo
 
-    // Aloca dinamicamente memória para armazenar os clientes
-    *clientes = (Cliente *)malloc(quantidade * sizeof(Cliente));
+    *clientes = (Cliente *)malloc(quantidade * sizeof(Cliente)); // Aloca dinamicamente memória para armazenar os clientes
     
     // Loop para ler dados de cada cliente do arquivo
     for(int i = 0; i < quantidade; i++){
-        // Lê código, nome e endereço de cada cliente e armazena na estrutura
-        fscanf(arquivo, "%s %s %[^\n]", (*clientes)[i].codigo, (*clientes)[i].nome, (*clientes)[i].endereco);
+        fscanf(arquivo, "%s %s %[^\n]", (*clientes)[i].codigo, (*clientes)[i].nome, (*clientes)[i].endereco); // Lê código, nome e endereço de cada cliente e armazena na estrutura
     }
 
-    // Fecha o arquivo após a leitura
-    fclose(arquivo);
+    fclose(arquivo); // Fecha o arquivo após a leitura
 
-    // Retorna a quantidade total de clientes lidos
-    return quantidade;
+    return quantidade; // Retorna a quantidade total de clientes lidos
 }
 
 // Função para salvar informações de clientes em um arquivo de texto.
@@ -55,5 +49,19 @@ void salvarClientes(Cliente *clientes, int quantidade) {
     fclose(arquivo);
 }
 
+void adicionarClientes(Cliente **clientes, int *quantidade, int quantidade_nova){*clientes = (Cliente *)realloc(*clientes, (*quantidade + quantidade_nova) * sizeof(Cliente)); // aloca dinamicamente memória para armazenar os novos clientes
+
+    // Loop para adicionar informações para os novos clientes
+    for(int i = 0; i < quantidade_nova; i++){
+        sprintf((*clientes)[*quantidade + i].codigo, "C%04d", *quantidade + i + 1); // Gera um código único para o novo cliente (C + número sequencial)
+        printf("Informe o nome do novo cliente %d: ", *quantidade + i + 1);
+        scanf("%s", (*clientes)[*quantidade + i].nome); 
+        printf("Informe o endereco do novo cliente %d: ", *quantidade + i + 1);
+        scanf(" %[^\n]", (*clientes)[*quantidade + i].endereco);
+        printf("\n");
+    }
+
+    *quantidade += quantidade_nova; // Atualiza a quantidade total de clientes
+}
 
  
