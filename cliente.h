@@ -1,8 +1,10 @@
-// estrutura de dados para o endereco do cliente
-struct Endereco;
+#ifndef CLIENTE_H
+#define CLIENTE_H
 
-// estrutura de dados para as informações do cliente
-struct cliente;
+typedef struct {
+    char codigo[10];
+    char nome[50];
+    char endereco[100];
+} Cliente;
 
-// função que recebe um ponteiro para a estrutura do cliente e preenche os dados
-void PreEncherCliente(struct cliente *cliente);
+#endif
