@@ -15,4 +15,9 @@ int main() {
     printf("Informe a quantidade de novos clientes a serem cadastrados: ");
     scanf("%d", &quantidade_nova);
 
+    adicionarClientes(&clientes, &quantidade_existente, quantidade_nova);
+    gnomeSort(clientes, quantidade_existente);
+    salvarClientes(clientes, quantidade_existente);
+
+
     
