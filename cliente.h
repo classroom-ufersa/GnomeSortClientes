@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
 #ifndef CLIENTE_H
 #define CLIENTE_H
 
