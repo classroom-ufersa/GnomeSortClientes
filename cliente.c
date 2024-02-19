@@ -64,4 +64,28 @@ void adicionarClientes(Cliente **clientes, int *quantidade, int quantidade_nova)
     *quantidade += quantidade_nova; // Atualiza a quantidade total de clientes
 }
 
- 
+// Função Gnome Sort para ordenar um array de clientes pelo nome
+void gnomeSort(Cliente *clientes, int n) {
+    int index = 0;  // Inicializa o índice para percorrer o array
+
+    // Enquanto ainda houver elementos não ordenados
+    while (index < n) {
+
+        // Se o índice for 0, incrementa-o
+        if (index == 0) {
+            index++;
+        }
+
+        // Compara os nomes dos clientes em posições adjacentes
+        if (strcmp(clientes[index].nome, clientes[index - 1].nome) >= 0) {
+          // Se estiverem em ordem crescente ou iguais, avança para o próximo índice
+            index++;
+        } else {
+            // Se os nomes estiverem fora de ordem, troca-os de posição
+            Cliente temp = clientes[index];
+            clientes[index] = clientes[index - 1];
+            clientes[index - 1] = temp;
+            index--;
+        }
+    }
+}
