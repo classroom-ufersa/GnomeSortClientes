@@ -7,4 +7,9 @@ typedef struct {
     char endereco[100];
 } Cliente;
 
+int carregarClientes(Cliente **clientes);
+void salvarClientes(Cliente *clientes, int quantidade);
+void adicionarClientes(Cliente **clientes, int *quantidade, int quantidade_nova);
+void gnomeSort(Cliente *clientes, int n);
+
 #endif
