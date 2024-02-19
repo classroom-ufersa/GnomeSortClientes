@@ -19,5 +19,15 @@ int main() {
     gnomeSort(clientes, quantidade_existente);
     salvarClientes(clientes, quantidade_existente);
 
+    free(clientes);
+
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+
+    printf("Tempo de execucao: %f segundos\n", cpu_time_used);
+
+    return 0;
+} 
+
 
     
