@@ -96,7 +96,8 @@ Cliente temp = clientes[index];
 - Decrementa **`index`** para verificar se a troca afetou os elementos anteriores.
 - O loop continua até que todos os elementos estejam ordenados, e a função é concluída.
 
-<aside>
-💡 o Gnome Sort compara os nomes dos clientes e move-se para trás no array sempre que encontra elementos fora de ordem, trocando-os até que o array esteja ordenado.
+```
 
-</aside>
+💡 o Gnome Sort compara os nomes dos clientes e move-se para trás no array sempre que encontra elementos fora de ordem, trocando-os até que o array esteja ordenado.
+d
+```
