@@ -55,7 +55,7 @@ void adicionarClientes(Cliente **clientes, int *quantidade, int quantidade_nova)
     for(int i = 0; i < quantidade_nova; i++){
         sprintf((*clientes)[*quantidade + i].codigo, "C%04d", *quantidade + i + 1); // Gera um código único para o novo cliente (C + número sequencial)
         printf("Informe o nome do novo cliente %d: ", *quantidade + i + 1);
-        scanf("%s", (*clientes)[*quantidade + i].nome); 
+        scanf(" %[^\n]", (*clientes)[*quantidade + i].nome); 
         printf("Informe o endereco do novo cliente %d: ", *quantidade + i + 1);
         scanf(" %[^\n]", (*clientes)[*quantidade + i].endereco);
         printf("\n");
