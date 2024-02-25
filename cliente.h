@@ -6,11 +6,7 @@
 #ifndef CLIENTE_H
 #define CLIENTE_H
 
-typedef struct {
-    char codigo[10];
-    char nome[50];
-    char endereco[100];
-} Cliente;
+typedef struct cliente Cliente;
 
 int carregarClientes(Cliente **clientes);
 void salvarClientes(Cliente *clientes, int quantidade);
