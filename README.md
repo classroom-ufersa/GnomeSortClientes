@@ -99,5 +99,49 @@ Cliente temp = clientes[index];
 ```
 
 💡 o Gnome Sort compara os nomes dos clientes e move-se para trás no array sempre que encontra elementos fora de ordem, trocando-os até que o array esteja ordenado.
-d
 ```
+
+## Executando o Gnome Sort:
+
+- Para executar o algoritmo Gnome Sort no seu computador, siga estes passos:
+
+1. Certifique de ter os seguintes arquivos em seu diretório de trabalho:
+
+- main.c: O arquivo principal que contém a função main() e chama a função gnomeSort().
+
+- cliente.c: O arquivo que contém a implementação da estrutura Cliente e a função gnomeSort().
+Outros arquivos necessários para o seu projeto.
+
+2. Compile os arquivos usando o compilador GCC (GNU Compiler Collection):
+
+```bash
+
+    gcc -o main main.c cliente.c
+```
+3. Execute o programa compilado:
+
+```bash
+    ./main
+```
+
+Este comando executará o programa e aplicará o algoritmo Gnome Sort para ordenar os clientes conforme a lógica implementada.
+
+## Complexidade do Algoritmo Gnome Sort:
+
+**Complexidade de tempo**
+
+- No melhor caso, quando o array já está ordenado, o Gnome Sort tem uma complexidade de tempo de O(n), onde n é o número de elementos no array.
+
+- No caso médio e no pior caso, o Gnome Sort tem uma complexidade de tempo de O(n^2), pois pode exigir várias trocas para mover um único elemento para a sua posição correta.
+
+**Complexidade de espaço**
+
+- O Gnome Sort é um algoritmo de ordenação in-place, o que significa que ele ordena os elementos no próprio array de entrada, sem exigir espaço adicional significativo além de algumas variáveis temporárias.
+
+- Portanto, a complexidade de espaço do Gnome Sort é O(1), ou seja, é constante e não depende do tamanho do conjunto de dados.
+
+## Referências bibliográficas
+
+ - Celes, W., Cerqueira, R., & Rangel, J. (2004). Introdução a estruturas de dados: com técnicas de programação em C.
+
+- Schildt, H. (1995). C completo e total.
