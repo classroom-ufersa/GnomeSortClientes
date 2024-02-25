@@ -9,17 +9,19 @@ struct cliente {
 
 // Função para carregar clientes a partir de um arquivo
 int carregarClientes(Cliente **clientes){
-    FILE *arquivo = fopen("clientes_ordenados.txt", "r"); // Abre o arquivo "clientes_ordenados.txt" em modo de leitura
-    
-    // Verifica se a abertura do arquivo foi bem-sucedida
-    if(arquivo == NULL){
-        perror("Erro ao abrir o arquivo");
+    FILE *arquivo = fopen("clientes_ordenados.txt", "a+"); // Abre o arquivo "clientes_ordenados.txt" para leitura e escrita
+
+    int quantidade; // Variável para armazenar a quantidade de clientes
+
+    if (fscanf(arquivo, "%d", &quantidade) != 1) { // Le a quantidade de clientes no arquivo
+        fclose(arquivo);
         return 0;
     }
-
-    int quantidade;
-    
-    fscanf(arquivo, "%d", &quantidade); // Lê a quantidade de clientes do arquivo
+   
+    if (quantidade <= 0) { // Se a quantidade de clientes for inválida, retorna 0
+        fclose(arquivo);
+        return 0;
+    }
 
     *clientes = (Cliente *)malloc(quantidade * sizeof(Cliente)); // Aloca dinamicamente memória para armazenar os clientes
     
