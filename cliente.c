@@ -1,5 +1,12 @@
 #include "cliente.h"
 
+// Estrutura de dados para armazenar os dados de um cliente
+struct cliente {
+    char codigo[10];
+    char nome[50];
+    char endereco[100];
+};
+
 // Função para carregar clientes a partir de um arquivo
 int carregarClientes(Cliente **clientes){
     FILE *arquivo = fopen("clientes_ordenados.txt", "r"); // Abre o arquivo "clientes_ordenados.txt" em modo de leitura
