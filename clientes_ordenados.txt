@@ -1,0 +1,126 @@
+125
+ C0084 123f jh
+ C0069 1d sw
+ C0125 2 eaw
+ C0083 2oj 123u
+ C0117 8eqwiy qwie87
+ C0119 9qwe7 qw7e
+ C0073 a dw
+ C0054 aaaa aaa
+ C0001 abnoan gabriel rua antonio vieira, casa 87
+ C0078 ad d
+ C0079 ad a
+ C0053 aecio neves rua do aecio
+ C0064 amado batista rua da musica boa
+ C0012 ana claudia rua da ana, casa 92
+ C0011 ana k rua da paz, casa 02
+ C0081 asd as
+ C0105 asd as
+ C0107 asd afd
+ C0101 asjdh askdj
+ C0102 askdj askd
+ C0056 bianca rua da bianca
+ C0055 bruna rua da bruna
+ C0002 bruno silva rua novo horizonte, casa 823
+ C0048 capitao nascimento rua do capitao
+ C0060 carlos miguel rua do carlim
+ C0032 chico rua do chico
+ C0065 cleber machado rua do narrador
+ C0027 cris rua do cris
+ C0014 cristiano ronaldo rua do cr7
+ C0057 cristina souza rua da cris
+ C0068 d 1d
+ C0072 d ad
+ C0076 d asd
+ C0080 d asd
+ C0082 d asd
+ C0070 da das
+ C0112 dakshdajsdashj jxmcxzjch
+ C0059 daniel rua do daniel
+ C0058 danilo rua do dani
+ C0106 das d
+ C0071 dasd 2
+ C0110 dfg fgkewrje
+ C0026 dinarte rua do dinarte
+ C0092 dkj skj
+ C0074 dw da
+ C0061 eduardo costa rua do cantor
+ C0097 eiwu qoou
+ C0096 ewet riue
+ C0010 fabricio pereira rua do fab, casa 77
+ C0109 fg fdg
+ C0034 francisca rua da francisca
+ C0024 francisco pereira rua do francisco, casa 0923
+ C0108 g fgd
+ C0031 gabriel rua do gabriel, casa 91
+ C0050 geromel rua do geromel
+ C0005 glauber batista rua do glauber, casa 02
+ C0009 gustavo kesley rua freitas, casa 14
+ C0004 helber dias rua da conquista, casa 98
+ C0052 helio rua do helio
+ C0116 hqwe qwue
+ C0067 iai2da d21
+ C0118 iqw7ue8 ieqw8e
+ C0115 jasdou eqiwe
+ C0113 jdashdjas jdasd
+ C0114 jdhasd hjasdh
+ C0045 joao pito rua do joao
+ C0103 jskadj jkasdj
+ C0051 kadsj askjd
+ C0044 kakashi rua abc
+ C0085 khjd ljn
+ C0030 kjas skdk
+ C0104 kjasdj‡asd asd
+ C0029 kleber rua do kleber
+ C0093 ksjad sdjp
+ C0086 ldk xzc
+ C0006 leandro martins rua do leandro, casa 23
+ C0008 leonardo silva rua do leo, casa 293
+ C0038 lingard rua do lingard
+ C0063 luiz gonzaga rua do forro
+ C0025 manoel cavalcante rua do manoel, casa 99
+ C0013 maria rita rua da silva, casa 111
+ C0007 mariana vitoria rua da mari, casa 25
+ C0020 mario rua do encanador, casa 09
+ C0028 martins rua martins, casa 9283
+ C0040 mc poze rua do poze
+ C0015 messi rua do messi
+ C0043 minato rua da aldeia
+ C0042 naruto aldeia da folha
+ C0041 orochi rua do orochi
+ C0022 pedro rua do pedro
+ C0017 pel‚ rua do rei, casa 222
+ C0035 pereira rua pereira
+ C0095 poei pjj
+ C0094 policia rua da policia
+ C0099 qiwue qwp
+ C0111 qkeqeqwe eqwkehqweqiwo
+ C0121 qw78e w8qe78qwe
+ C0098 qwiu wqiue
+ C0003 renato jose rua do renato, casa 98
+ C0023 renato rua do renato
+ C0019 romario rua do baixinho, casa 09
+ C0016 ronaldinho rua do ronaldim, casa 10
+ C0100 sadjh fajsh
+ C0036 silva rua silva
+ C0062 silvano salles rua da sofrencia
+ C0091 sua dj
+ C0021 tais rua da tais, casa 09
+ C0037 toni kross rua do kross
+ C0124 u das
+ C0049 uriel rua do uriel
+ C0123 uw8e 89we
+ C0075 w 31
+ C0077 w d
+ C0120 wq7e qw7e8
+ C0122 wqe8 iwque
+ C0047 xabi alonso rua do xabi
+ C0090 xihs xjhs
+ C0088 xn xlk
+ C0089 xoi xpius
+ C0046 xuxa rua da xuxa
+ C0087 xzv xbvn
+ C0018 yuri alberto rua do perde-gol, casa 10
+ C0039 zacarias rua do zaca
+ C0066 zeca pagodim rua do zeca pagodim
+ C0033 zita rua d zita
